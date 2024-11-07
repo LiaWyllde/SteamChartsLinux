@@ -4,11 +4,11 @@ import java.io.*;
 
 public class SteamController {
 
-	public void readDirectory(String path, String nome, String year, String month, Double average) throws IOException {
+	public void readDirectory(String path, String name, String year, String month, Double average) throws IOException {
 		
 		existentDirectory(path);
 		
-		File file = new File(path, nome);
+		File file = new File(path, name);
 		String[] array;
 
 		if (!(file.exists())) {
